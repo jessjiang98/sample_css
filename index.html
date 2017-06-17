@@ -9,7 +9,7 @@
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>      
 <li><a href="/blog">Blog</a></li>
-      <li><a href="#">Nav 3</a></li>
+<li><a href="{{ site.posts.first.url }}">Newest Post</a></li>
     </ul>
   </nav>
   <a href="/" class="header-logo">
@@ -117,7 +117,7 @@ body {
   box-sizing: border-box;
   display: block;
   height: 10vh;
-  left: -30px;
+  left: auto;
   padding-top: 10px;
   position: relative;
   text-align: center;
@@ -132,15 +132,15 @@ body {
 }
 .header-nav {
   float: right;
-  padding: 5.5vh 60px 0 0;
+     padding: 2vh 1em 0 0;
 }
 .header-nav > li {
   display: inline-block;
-  margin-left: 1em;
+  margin-left: .25em;
 }
 .header-nav > li ~ li {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  padding-left: 1em;
+  padding-left: .25em;
 }
 .header-nav a {
   color: #fff;
@@ -163,7 +163,7 @@ body {
   color: #fff;
 }
 .nav-links a {
-  font-size: 0.8rem;
+  font-size: 3.25vw;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -233,11 +233,11 @@ body {
       }
       .bio-box {
         box-sizing: border-box;
-        float: left;
-        font-size: 1rem;
+        float: none;
+        font-size: 1.3rem;
         margin: 6rem 0 0;
         padding: 0 3%;
-        width: 33%;
+        width: auto;
       }
       .bio-box h3 {
         color: #fff;
@@ -288,6 +288,7 @@ body {
   padding: 0 3vw;
   font-size: 0.8rem;
 }
+
     </style>
   </head>
   <body>
@@ -419,7 +420,7 @@ body {
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>      
 <li><a href="/blog">Blog</a></li>
-      <li><a href="#">Nav 3</a></li>
+<li><a href="{{ site.posts.first.url }}">Newest Post</a></li>
     </ul>
   </nav>
   <h3>Learn Enough <span>to Be Dangerous</span></h3>
