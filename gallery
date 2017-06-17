@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Page: Don't Panic</title>
+    <meta charset="utf-8">
+    <header class="header">
+  <nav>
+    <ul class="header-nav">
+      <li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>      <li><a href="#">Nav 2</a></li>
+      <li><a href="#">Nav 3</a></li>
+    </ul>
+  </nav>
+  <a href="/" class="header-logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8hxeW04izheU06YptPdZBKbBUWzNVXuAjrEiM0iGvz1gD_y_tpRuDw" alt="Learn Enough">
+  </a>
+</header>
+    <style>
+      /* GLOBAL STYLES */
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 7vw;
+        margin-top: 0;
+      }
+      a {
+        color: #6397b5;
+      }
+      p {
+      line-height: 1.5;
+  margin: 0.75em 0;
+
+      }
+      h2 {
+      font-size: 2em;
+      }
+      h2 ~ p {
+       font-size: 0.8em;
+       font-style: italic;
+       margin: 1em auto 0;
+       max-width: 70%;
+       text-align: center;
+       }
+     html {
+     box-shadow: 0 0 0 30px #000 inset;
+     padding: 0 30px;
+      }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: helvetica, arial, sans;
+}
+.content-container {
+  display: flex;
+  flex-grow: 1;
+  padding-top: 10vh;
+  width: 100%;
+}
+
+   /* HEADER STYLES */
+.header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+}
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  left: -30px;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: #ed6e2f;
+}
+.header-logo img {
+  height: 80%;
+}
+.header-nav {
+  float: right;
+  padding: 5.5vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 1em;
+}
+.header-nav a {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header-nav a:hover,
+.header-nav a:active {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: #fff;
+}
+.header-nav a {
+  color: #fff;
+}
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:active  {
+  color: #ed6e2f;
+}
+/* FOOTER STYLES */
+.footer {
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #aaa;
+}
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #ccc;
+}
+    
+}
+/* COLUMN STYLES */
+.col-three {
+  display: flex;
+  flex: 1;
+}
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+.col-three .col ~ .col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+.col-three .col-content {
+  flex: 1 1 0;
+}
+.col-three .col-aside {
+  flex: 0 1 20em
+}
+/* GALLERY STYLES */
+.gallery-thumbs {
+  height: 90vh;
+  overflow: scroll;
+}
+.gallery-thumbs > div {
+  cursor: pointer;
+}
+.gallery-thumbs img {
+  box-sizing: border-box;
+  box-shadow: 0 0 0 5px transparent;
+  display: inline-block;
+  margin: 0 0 10px 0;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.gallery-thumbs img:hover {
+  opacity: 1;
+}
+.gallery-thumbs .current img {
+  box-shadow: 0 0 0 5px #ed6e2f;
+  opacity: 1;
+}
+.gallery-photo {
+  position: relative;
+}
+.gallery-photo img {
+  width: 100%;
+}
+.gallery-info {
+  font-size: 0.8rem;
+}
+.gallery-info h3 {
+  margin-bottom: 1em;
+}
+    </style>
+  </head>
+  <body>
+<div class="gallery col-three">
+  <div class="col col-nav gallery-thumbs" id="gallery-thumbs">
+    <div class="current">
+      <img src="/images/small/slide1.jpg">
+    </div>
+    <div>
+      <img src="/images/small/slide1.jpg">
+    </div>
+  </div>
+  <div class="col col-content">
+    <div class="gallery-photo" id="gallery-photo">
+      <img src="/images/large/slide1.jpg">
+    </div>
+  </div>
+  <div class="col col-aside gallery-info" id="gallery-info">
+    <h3>Image Title 1</h3>
+    <p>Image description 1</p>
+  </div>
+</div>
+  </body>
+<footer class="footer">
+  <a class="footer-logo" href="/">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8hxeW04izheU06YptPdZBKbBUWzNVXuAjrEiM0iGvz1gD_y_tpRuDw" alt="Learn Enough"/>
+  </a>
+  <nav>
+    <ul class="footer-nav nav-links">
+      <li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>      
+      <li><a href="#">Nav 2</a></li>
+      <li><a href="#">Nav 3</a></li>
+    </ul>
+  </nav>
+  <h3>Learn Enough <span>to Be Dangerous</span></h3>
+</footer>
+</html>
