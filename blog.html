@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Page: Don't Panic</title>
+    <meta charset="utf-8">
+    <header class="header">
+  <nav>
+    <ul class="header-nav">
+      <li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>      <li><a href="#">Nav 2</a></li>
+      <li><a href="#">Nav 3</a></li>
+    </ul>
+  </nav>
+  <a href="/" class="header-logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8hxeW04izheU06YptPdZBKbBUWzNVXuAjrEiM0iGvz1gD_y_tpRuDw" alt="Learn Enough">
+  </a>
+</header>
+    <style>
+      /* GLOBAL STYLES */
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 7vw;
+        margin-top: 0;
+      }
+      a {
+        color: #6397b5;
+      }
+      p {
+      line-height: 1.5;
+  margin: 0.75em 0;
+
+      }
+      h2 {
+      font-size: 2em;
+      }
+      h2 ~ p {
+       font-size: 0.8em;
+       font-style: italic;
+       margin: 1em auto 0;
+       max-width: 70%;
+       text-align: center;
+       }
+     html {
+     box-shadow: 0 0 0 30px #000 inset;
+     padding: 0 30px;
+      }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: helvetica, arial, sans;
+}
+.content-container {
+  display: flex;
+  flex-grow: 1;
+  padding-top: 10vh;
+  width: 100%;
+}
+h4 {
+  color: #999;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+   /* HEADER STYLES */
+.header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+}
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  left: -30px;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: #ed6e2f;
+}
+.header-logo img {
+  height: 80%;
+}
+.header-nav {
+  float: right;
+  padding: 5.5vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 1em;
+}
+.header-nav a {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header-nav a:hover,
+.header-nav a:active {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: #fff;
+}
+.header-nav a {
+  color: #fff;
+}
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:active  {
+  color: #ed6e2f;
+}
+/* FOOTER STYLES */
+.footer {
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #aaa;
+}
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #ccc;
+}
+/* COLUMN STYLES */
+.
+.
+.
+.col-two {
+  display: flex;
+}
+.col-two .col-aside {
+  flex: 0 0 20em;
+  order: 1;
+}
+.col-two .col-content {
+  flex: 1;
+}
+
+/* PAGE STYLES */
+.page {
+  margin: 10vh auto 15vh;
+  max-width: 980px;
+  width: 85vw;
+}
+.page h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.page h2 {
+  margin-bottom: 0.5em;
+}
+.page h4 {
+  margin-bottom: 1em;
+}
+
+/* BLOG STYLES */
+.blog-recent {
+  text-align: right;
+}
+.blog-title-list {
+  list-style: none;
+  padding: 0;
+}
+.blog-title-list li ~ li {
+  margin-top: 1.5em;
+}
+.blog-title-list span {
+  color: #999;
+  display: block;
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+.blog-posts ~ .blog-posts {
+  border-top: 1px dotted rgba(0, 0, 0, 0.1);
+  margin-top: 4em;
+  padding-top: 4em;
+}
+.blog-posts .post-header {
+  font-size: 0.8rem;
+}
+.post-header {
+  margin-bottom: 1.5em;
+}
+.post-header img,
+.post-header .social-link {
+  margin-right: 0.5em;
+}
+.post-header img {
+  border-radius: 99px;
+  display: inline-block;
+  height: 2.5em;
+  vertical-align: middle;
+}
+.posts-image {
+  background-position: center;
+  background-size: cover;
+  height: 6em;
+  margin-bottom: 1.5em;
+}
+    </style>
+  </head>
+  <body>
+<div class="page blog-index">
+  <h1>Bloggie Blog</h1>
+  <div class="col-two blog-cols">
+    <div class="col col-aside blog-recent">
+      <h4>Recent Posts</h4>
+      <ul class="blog-title-list">
+        <li>
+          <a href="">Blog post title</a>
+          <span>Posted: Month Day, Year</span>
+        </li>
+      </ul>
+    </div>
+    <div class="col col-content blog-previews">
+      <div class="blog-posts">
+        <header class="post-header">
+          <h2><a href="">I am the title of an article</a></h2>
+          <div class="post-byline">
+    <img src="https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150">
+            <a href="#" class="social-link">Tw</a>
+            by: Me, Myself, and I
+            <span> - Month Day, year</span>
+          </div>
+        </header>
+        <div class="posts-image" style="background-image:url('/images/hero.jpg')">
+        </div>
+        <p>
+          Blurb
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+<footer class="footer">
+  <a class="footer-logo" href="/">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8hxeW04izheU06YptPdZBKbBUWzNVXuAjrEiM0iGvz1gD_y_tpRuDw" alt="Learn Enough"/>
+  </a>
+  <nav>
+    <ul class="footer-nav nav-links">
+      <li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>      
+      <li><a href="#">Nav 2</a></li>
+      <li><a href="#">Nav 3</a></li>
+    </ul>
+  </nav>
+  <h3>Learn Enough <span>to Be Dangerous</span></h3>
+</footer>
+</html>
